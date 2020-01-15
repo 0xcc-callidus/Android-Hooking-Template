@@ -32,5 +32,5 @@ void libhook_main() {
         sleep(1); 
     }   
     
-    MSHookFunction((void *)getRealOffset(0x12BA798), (void *)Update, (void **) &old_Update);
+    MSHookFunction((void *)getRealOffset(0x12BA798), (void *)Update, (void **) &old_Update); // 주소값은 thumb일땐 +1 해서 넘겨야 함
 }
